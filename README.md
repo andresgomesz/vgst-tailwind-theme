@@ -87,36 +87,6 @@ Posibilidad de adminstrarlo desde el backend, en el caso de la img, opté por ma
 
 ---
 
-## Plugin requerido
-
-Este proyecto utiliza un plugin personalizado para la gestión de contenido dinámico.
-
-Repositorio del plugin:
-https://github.com/andresgomesz/vgst-core
-
-### Funcionalidad del plugin
-
-- Registro de CPT para Productos
-- Registro de CPT para Home Slider
-- Separación clara entre lógica de administración y frontend
-- Evita dependencia de ACF (Free o Pro)
-
-## 📁 Estructura del plugin
-
-```
-vgst-products/
-├── vgst-core.php              # Punto de entrada principal del plugin
-├── admin/
-│   └── home-slider-admin.php  # Interfaz administrativa para sliders
-├── frontend/
-│   └── home-slider.php        # Lógica de presentación de sliders
-└── includes/
-    └── post-types/
-        └── producto.php       # Definición del CPT para productos
-```
-
----
-
 ## 🎨 Criterios de UI y estilos (Resúmen)
 
 ### Tipografía
@@ -213,6 +183,35 @@ Redes sociales:
 - Clonar repositorio en wp-content/themes/
 - Activar el tema desde el administrador de WordPress
 - Instalar y activar el plugin vgst-products
+
+## Plugin requerido
+
+Este proyecto utiliza un plugin personalizado para la gestión de contenido dinámico.
+
+Repositorio del plugin:
+https://github.com/andresgomesz/vgst-core
+
+### Funcionalidad del plugin
+
+- Registro de CPT para Productos
+- Registro de CPT para Home Slider
+- Separación clara entre lógica de administración y frontend
+- Evita dependencia de ACF (Free o Pro)
+
+## 📁 Estructura del plugin
+
+```
+vgst-products/
+├── vgst-core.php              # Punto de entrada principal del plugin
+├── admin/
+│   └── home-slider-admin.php  # Interfaz administrativa para sliders
+├── frontend/
+│   └── home-slider.php        # Lógica de presentación de sliders
+└── includes/
+    └── post-types/
+        └── producto.php       # Definición del CPT para productos
+```
+---
 
 **Desarrollo**
 
