@@ -68,10 +68,6 @@ No se utilizó en este caso ACF Free / ACF Pro:
     o	Enlace al single
 - **Esto es 100% WordPress core, estable, portable.**
 
-## Slider Home Hero ##
-
-Posibilidad de adminstrarlo desde el backend, en el caso de la img, opté por manejarla como URL para simplificar la gestión y evitar dependencias, priorizando claridad y estabilidad. El uso de Media Library es una mejora incremental que podría implementarse a futuro.
-
 ---
 
 ## 📁 Estructura relevante del theme
