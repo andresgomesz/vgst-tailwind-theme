@@ -92,6 +92,7 @@ Posibilidad de adminstrarlo desde el backend, en el caso de la img, opté por ma
 ### Tipografía
 
 **Font-size estándar** del proyecto: **Roboto**
+`@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');`
 
 ---
 
@@ -126,39 +127,6 @@ Por este motivo:
 - Permite versionado con Git
 - Reduce riesgo de borrado accidental
 - Refuerza la separación contenido / presentación
-
----
-
-## 🦶 Footer
-
-### Estructura
-
-El footer se divide en **dos secciones**:
-
-#### 1️⃣ Sección superior
-
-- Fondo: `#34519c`
-- Contiene **3 columnas**:
-  - Productos
-  - Información General + Redes
-  - Información Legal
-
-**Características:**
-- Contenedor centrado horizontalmente
-- Columnas alineadas en la misma línea
-- Texto y links alineados a la izquierda
-- Font-size: `15px`
-
-Redes sociales:
-- Íconos circulares `40x40`
-- Fondo `#9FCE00`
-- Íconos SVG color `#34519c`
-
-#### 2️⃣ Sección inferior (copyright)
-
-- Fondo: `#1A2862`
-- Texto centrado
-- Font-size: `12px`
 
 ---
 
