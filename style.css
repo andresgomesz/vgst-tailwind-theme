@@ -22,6 +22,16 @@ _tw is based on Underscores https://underscores.me/ and Varia https://github.com
 Underscores and Varia are distributed under the terms of the GNU GPL v2 or later.
 */
 @layer properties;
+#primary-menu > li > a {
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+#primary-menu > li:last-child > a {
+  color: #9FCE00;
+}
 :root, :host {
   --font-sans: 'Roboto',
 		ui-sans-serif,
@@ -329,6 +339,12 @@ body {
 #primary-menu > li:last-child > a {
   color: #9FCE00;
 }
+header#masthead {
+  z-index: 999;
+}
+.pointer-events-auto {
+  pointer-events: auto;
+}
 .visible {
   visibility: visible;
 }
@@ -345,9 +361,6 @@ body {
 }
 .absolute {
   position: absolute;
-}
-.fixed {
-  position: fixed;
 }
 .relative {
   position: relative;
@@ -400,11 +413,8 @@ body {
 .z-20 {
   z-index: 20;
 }
-.z-40 {
-  z-index: 40;
-}
-.z-50 {
-  z-index: 50;
+.z-\[9999\] {
+  z-index: 9999;
 }
 .container {
   width: 100%;
@@ -1215,11 +1225,6 @@ body {
   margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
   margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
 }
-:where(.space-y-6 > :not(:last-child)) {
-  --tw-space-y-reverse: 0;
-  margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
-  margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
-}
 :where(.space-x-0\.5 > :not(:last-child)) {
   --tw-space-x-reverse: 0;
   margin-inline-start: calc(calc(var(--spacing) * 0.5) * var(--tw-space-x-reverse));
@@ -1507,6 +1512,10 @@ body {
 .leading-\[18px\] {
   --tw-leading: 18px;
   line-height: 18px;
+}
+.leading-\[22px\] {
+  --tw-leading: 22px;
+  line-height: 22px;
 }
 .leading-\[24px\] {
   --tw-leading: 24px;

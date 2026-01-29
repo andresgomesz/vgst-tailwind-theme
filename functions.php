@@ -308,16 +308,16 @@ function tw_enqueue_scripts() {
             filemtime( get_template_directory() . '/assets/js/modules/resenas-slider.js' ),
             true
         );
+
+		wp_enqueue_script(
+			'mobile-menu',
+			get_template_directory_uri() . '/assets/js/modules/mobile-menu.js',
+			[],
+			null,
+			true
+			);
     }
 }
 
 add_action( 'wp_enqueue_scripts', 'tw_enqueue_scripts' );
 
-
-wp_enqueue_script(
-  'mobile-menu',
-  get_template_directory_uri() . '/assets/js/mobile-menu.js',
-  [],
-  null,
-  true
-);

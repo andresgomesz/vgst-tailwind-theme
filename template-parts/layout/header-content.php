@@ -1,7 +1,7 @@
 <header id="masthead"
-        class="absolute top-0 left-0 w-full h-[128px] z-50 flex items-center">
+        class="absolute top-0 left-0 w-full h-[128px] z-[9999] flex items-center pointer-events-auto">
 
-  <div class="container mx-auto px-6 flex items-center justify-end">
+  <div class="w-full flex items-center justify-end px-6">
 
     <!-- Desktop Menu -->
     <nav id="site-navigation"
@@ -10,10 +10,10 @@
 
       <?php
       wp_nav_menu([
-        'theme_location' => 'primary', // tu ubicación 'primary'
-        'menu'           => 'Main Menu', // nombre del menú
+        'theme_location' => 'primary',
+        'menu'           => 'Main Menu',
         'menu_id'        => 'primary-menu',
-        'menu_class'     => 'flex items-center gap-8',
+        'menu_class' => 'flex items-center gap-8 text-white',
         'container'      => false,
       ]);
       ?>
@@ -29,18 +29,3 @@
 
   </div>
 </header>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu"
-     class="fixed inset-0 bg-[#1A2862] z-40 hidden flex-col items-center justify-center space-y-6">
-
-  <?php
-  wp_nav_menu([
-    'theme_location' => 'primary',
-    'menu'           => 'Main Menu',
-    'menu_class'     => 'flex flex-col items-center gap-6 text-white text-xl font-semibold',
-    'container'      => false,
-  ]);
-  ?>
-
-</div>

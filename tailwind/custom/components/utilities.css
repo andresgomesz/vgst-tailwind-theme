@@ -29,3 +29,7 @@
 #primary-menu > li:last-child > a {
   color: #9FCE00;
 }
+
+header#masthead {
+  z-index: 999;
+}
