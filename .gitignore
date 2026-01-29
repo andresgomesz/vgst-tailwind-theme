@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment
+.env
+.DS_Store
+
+# Archives
+_tw.zip
