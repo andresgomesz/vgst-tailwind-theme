@@ -85,6 +85,22 @@ Posibilidad de adminstrarlo desde el backend, en el caso de la img, opté por ma
 └── style.css # Hoja de estilos base del tema (comentarios y overrides)
 ```
 
+---
+
+## Plugin requerido
+
+Este proyecto utiliza un plugin personalizado para la gestión de contenido dinámico.
+
+Repositorio del plugin:
+https://github.com/andresgomesz/vgst-core
+
+### Funcionalidad del plugin
+
+- Registro de CPT para Productos
+- Registro de CPT para Home Slider
+- Separación clara entre lógica de administración y frontend
+- Evita dependencia de ACF (Free o Pro)
+
 ## 📁 Estructura del plugin
 
 ```
