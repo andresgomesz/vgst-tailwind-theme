@@ -184,13 +184,19 @@ vgst-core/
 **Desarrollo**
 
 # Instalar dependencias de desarrollo
+```
 npm install
+```
 
 # Compilar assets para desarrollo
+```
 npm run dev
+```
 
 # Compilar para producción
+```
 npm run build
+```
 
 ---
 
