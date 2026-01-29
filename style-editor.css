@@ -358,6 +358,17 @@ body {
 header#masthead {
   z-index: 999;
 }
+.custom-select {
+  background-image: url('assets/images/icons/arrow-down.svg');
+  background-size: 16px 7px;
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 640px) {
+  .custom-select {
+    background-position: right 1rem center;
+  }
+}
 .pointer-events-auto {
   pointer-events: auto;
 }
@@ -1641,6 +1652,9 @@ header#masthead {
 .text-\[\#34519c\] {
   color: #34519c;
 }
+.text-\[\#58617A\] {
+  color: #58617A;
+}
 .text-\[\#EEC044\] {
   color: #EEC044;
 }
@@ -1798,6 +1812,9 @@ header#masthead {
     color: var(--color-white);
   }
 }
+.placeholder\:text-\[\#58617A\]::placeholder {
+  color: #58617A;
+}
 @media (hover: hover) {
   .hover\:scale-105:hover {
     --tw-scale-x: 105%;
@@ -1898,6 +1915,11 @@ header#masthead {
 @media (width >= 40rem) {
   .sm\:right-6 {
     right: calc(var(--spacing) * 6);
+  }
+}
+@media (width >= 40rem) {
+  .sm\:-bottom-\[20px\] {
+    bottom: calc(20px * -1);
   }
 }
 @media (width >= 40rem) {
@@ -2376,6 +2398,11 @@ header#masthead {
   }
 }
 @media (width >= 64rem) {
+  .lg\:-bottom-\[30px\] {
+    bottom: calc(30px * -1);
+  }
+}
+@media (width >= 64rem) {
   .lg\:left-\[5\%\] {
     left: 5%;
   }
@@ -2617,15 +2644,20 @@ header#masthead {
   }
 }
 @media (width >= 64rem) {
+  .lg\:leading-\[60px\] {
+    --tw-leading: 60px;
+    line-height: 60px;
+  }
+}
+@media (width >= 64rem) {
   .lg\:leading-\[68\.87px\] {
     --tw-leading: 68.87px;
     line-height: 68.87px;
   }
 }
-@media (width >= 64rem) {
-  .lg\:leading-\[85px\] {
-    --tw-leading: 85px;
-    line-height: 85px;
+@media (width >= 80rem) {
+  .xl\:w-\[400px\] {
+    width: 400px;
   }
 }
 @media (width >= 80rem) {

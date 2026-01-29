@@ -33,3 +33,16 @@
 header#masthead {
   z-index: 999;
 }
+
+.custom-select {
+  background-image: url('assets/images/icons/arrow-down.svg');
+  background-size: 16px 7px;
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 640px) {
+  .custom-select {
+    background-position: right 1rem center;
+  }
+}

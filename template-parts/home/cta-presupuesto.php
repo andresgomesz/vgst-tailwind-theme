@@ -1,5 +1,5 @@
 <section class="py-8 px-4 sm:py-12 md:px-8 bg-[#E8EDEF] lg:pb-0">
-    <div class="container mx-auto max-w-4xl">
+    <div class="container mx-auto ">
         <!-- Título con subrayado -->
         <div class="text-center mb-6 sm:mb-8 md:mb-10">
             <h2 class="text-2xl sm:text-3xl md:text-[36px] font-semibold leading-tight md:leading-[57.6px]">
@@ -31,7 +31,7 @@
                     <input type="text" 
                            placeholder="Nombre"
                            required
-                           class="bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
+                           class="placeholder:text-[#58617A] xl:w-[400px] bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
                 </div>
                 
                 <!-- Teléfono -->
@@ -42,7 +42,7 @@
                     <input type="tel" 
                            placeholder="+34"
                            required
-                           class="bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
+                           class="placeholder:text-[#58617A] xl:w-[400px] bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
                 </div>
                 
                 <!-- Email -->
@@ -54,7 +54,7 @@
                     <input type="email" 
                            placeholder="mail@mail.com"
                            required
-                           class="bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
+                           class="placeholder:text-[#58617A] xl:w-[400px] bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200">
                 </div>
             </div>
             
@@ -65,8 +65,10 @@
                     <label class="block text-xs sm:text-sm font-semibold text-[#4F5665] mb-1 sm:mb-2">
                         Material *
                     </label>
-                    <select required
-                            class="bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-transparent bg-[url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%2325d366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>')] bg-[length:14px_14px] bg-[right_0.75rem_center] sm:bg-[right_1rem_center] bg-no-repeat transition-all duration-200">
+                    <select 
+  required 
+  class="text-[#58617A] xl:w-[400px] bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none transition-all duration-200 custom-select"
+>
                         <option value="" disabled selected class="text-gray-400">Material</option>
                         <option value="cubierta" class="text-gray-800">Panel sándwich Cubierta</option>
                         <option value="fachada" class="text-gray-800">Panel sándwich Fachada</option>
@@ -84,7 +86,7 @@
                                placeholder="m²"
                                required
                                min="1"
-                               class="bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
+                               class="placeholder:text-[#58617A] xl:w-[400px] bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
                         <span class="absolute right-3 sm:right-4 top-1/2 transform -translate-y-1/2 text-[#4F5665] text-sm sm:text-base">m²</span>
                     </div>
                 </div>
@@ -95,7 +97,7 @@
                         Provincia de entrega *
                     </label>
                     <select required
-                            class="bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-transparent bg-[url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%2325d366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>')] bg-[length:14px_14px] bg-[right_0.75rem_center] sm:bg-[right_1rem_center] bg-no-repeat transition-all duration-200">
+                            class="custom-select text-[#58617A] xl:w-[400px] bg-white w-full px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-transparent bg-[url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%2325d366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>')] bg-[length:14px_14px] bg-[right_0.75rem_center] sm:bg-[right_1rem_center] bg-no-repeat transition-all duration-200">
                         <option value="" disabled selected class="text-gray-400">Seleccione provincia</option>
                         <option value="madrid" class="text-gray-800">Madrid</option>
                         <option value="barcelona" class="text-gray-800">Barcelona</option>

@@ -43,7 +43,7 @@
             <?php if (!empty($slide['title'])): ?>
               <h1 class="text-white font-semibold
                         text-[28px] sm:text-[36px] lg:text-[48px]
-                        leading-[38px] sm:leading-[52px] lg:leading-[85px]
+                        leading-[38px] sm:leading-[52px] lg:leading-[60px]
                         tracking-[-1px]">
                 <?php echo esc_html($slide['title']); ?>
               </h1>
@@ -55,7 +55,7 @@
               <div class="relative inline-block">
                 <p class="text-[#9FCE00] font-semibold
                           text-[32px] sm:text-[44px] lg:text-[64px]
-                          leading-[42px] sm:leading-[56px] lg:leading-[85px]
+                          leading-[42px] sm:leading-[56px] lg:leading-[60px]
                           tracking-[-1px]">
                   <?php echo esc_html($slide['text']); ?>
                 </p>
@@ -63,7 +63,7 @@
                 <img
                   src="<?php echo get_template_directory_uri(); ?>/assets/images/ui/subrayadowhite.png"
                   alt=""
-                  class="absolute right-0 -bottom-2"
+                  class="absolute right-0 sm:-bottom-[20px] lg:-bottom-[30px]"
                 >
               </div>
             </div>
