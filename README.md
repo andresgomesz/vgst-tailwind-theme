@@ -56,9 +56,8 @@ contenido dinámico, reutilizable y exportable, con ciclo de vida propio.
 Configuré una página estática como inicio para que WordPress utilice automáticamente front-page.php, respetando la jerarquía de templates y manteniendo el home desacoplado del contenido.
 
 
-## Manejo de Slider hero & Productos (detalle) - Backend
+## No se utilizó en este caso ACF Free / ACF Pro
 
-No se utilizó en este caso ACF Free / ACF Pro:
 - Decisión consciente por limitaciones de licencia en el caso de ACF Pro.
 - ACF Free presenta limitaciones para el normal desarrollo.
 - Se resolvió con Custom Post Type + campos nativos:
