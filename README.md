@@ -15,7 +15,30 @@ Top bar con email y botón de contacto.
 Menú principal flotando sobre el hero, con versión desktop y mobile funcional.
 Hero / slider principal funcional y administrable desde el backend.
 Secciones del home basadas en mockup, implementadas con template-parts/home.
-CPT (Custom Post Types) para manejar productos y sliders, reemplazando ACF por limitaciones de licencia.
+CPT (Custom Post Types), reemplazando ACF por limitaciones de licencia.
+
+## Gestión del Home Slider
+
+El Home Slider principal se gestiona mediante una **página administrativa personalizada**
+(`admin.php?page=home-slider`) incluida en el plugin `vgst-core`.
+
+### Motivo de la implementación
+
+El slider del home fue tratado como un **componente único y global del sitio**, y no como
+contenido reutilizable. Por este motivo:
+
+- No se registró como Custom Post Type independiente.
+- Se administran sus datos desde una pantalla de configuración específica.
+- Su lógica está desacoplada del contenido editorial (productos).
+
+Esta decisión permite:
+
+- Mantener una interfaz administrativa simple y enfocada.
+- Evitar sobrecargar el panel con tipos de contenido adicionales.
+- Centralizar la gestión del slider principal del sitio.
+
+Los **productos**, en cambio, sí se implementaron como **Custom Post Type**, ya que representan
+contenido dinámico, reutilizable y exportable, con ciclo de vida propio.
 
 ---
 
