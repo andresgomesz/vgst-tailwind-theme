@@ -22,6 +22,11 @@ _tw is based on Underscores https://underscores.me/ and Varia https://github.com
 Underscores and Varia are distributed under the terms of the GNU GPL v2 or later.
 */
 @layer properties;
+#primary-menu {
+  display: flex !important;
+  justify-content: flex-end !important;
+  gap: 32px;
+}
 #primary-menu > li > a {
   color: white;
   font-size: 16px;
@@ -383,17 +388,14 @@ header#masthead {
 .inset-0 {
   inset: calc(var(--spacing) * 0);
 }
-.top-0 {
-  top: calc(var(--spacing) * 0);
-}
 .top-1\/2 {
   top: calc(1/2 * 100%);
 }
-.top-6 {
-  top: calc(var(--spacing) * 6);
-}
 .top-10 {
   top: calc(var(--spacing) * 10);
+}
+.top-\[70px\] {
+  top: 70px;
 }
 .right-0 {
   right: calc(var(--spacing) * 0);
@@ -403,9 +405,6 @@ header#masthead {
 }
 .right-3 {
   right: calc(var(--spacing) * 3);
-}
-.right-6 {
-  right: calc(var(--spacing) * 6);
 }
 .right-\[-200px\] {
   right: -200px;
@@ -439,9 +438,6 @@ header#masthead {
 }
 .z-\[9999\] {
   z-index: 9999;
-}
-.z-\[10000\] {
-  z-index: 10000;
 }
 .container {
   width: 100%;
@@ -1037,6 +1033,9 @@ header#masthead {
 .h-\[17px\] {
   height: 17px;
 }
+.h-\[45px\] {
+  height: 45px;
+}
 .h-\[48px\] {
   height: 48px;
 }
@@ -1130,6 +1129,9 @@ header#masthead {
 .w-\[123px\] {
   width: 123px;
 }
+.w-\[152px\] {
+  width: 152px;
+}
 .w-\[309px\] {
   width: 309px;
 }
@@ -1222,6 +1224,9 @@ header#masthead {
 .justify-end {
   justify-content: flex-end;
 }
+.gap-2 {
+  gap: calc(var(--spacing) * 2);
+}
 .gap-3 {
   gap: calc(var(--spacing) * 3);
 }
@@ -1293,6 +1298,9 @@ header#masthead {
 }
 .rounded-\[10px\] {
   border-radius: 10px;
+}
+.rounded-\[30px\] {
+  border-radius: 30px;
 }
 .rounded-\[40px\] {
   border-radius: 40px;
@@ -1449,6 +1457,9 @@ header#masthead {
 .px-8 {
   padding-inline: calc(var(--spacing) * 8);
 }
+.py-2 {
+  padding-block: calc(var(--spacing) * 2);
+}
 .py-2\.5 {
   padding-block: calc(var(--spacing) * 2.5);
 }
@@ -1521,6 +1532,9 @@ header#masthead {
 }
 .text-\[12px\] {
   font-size: 12px;
+}
+.text-\[14px\] {
+  font-size: 14px;
 }
 .text-\[15px\] {
   font-size: 15px;
@@ -1606,6 +1620,9 @@ header#masthead {
 }
 .whitespace-nowrap {
   white-space: nowrap;
+}
+.text-\[\#1A2862\] {
+  color: #1A2862;
 }
 .text-\[\#1F1E1780\] {
   color: #1F1E1780;
@@ -2339,11 +2356,6 @@ header#masthead {
   .md\:leading-\[57\.6px\] {
     --tw-leading: 57.6px;
     line-height: 57.6px;
-  }
-}
-@media (width >= 64rem) {
-  .lg\:relative {
-    position: relative;
   }
 }
 @media (width >= 64rem) {
