@@ -436,6 +436,9 @@ header#masthead {
 .z-\[99\] {
   z-index: 99;
 }
+.z-\[999\] {
+  z-index: 999;
+}
 .z-\[9999\] {
   z-index: 9999;
 }
@@ -1481,8 +1484,8 @@ header#masthead {
 .pt-\[20px\] {
   padding-top: 20px;
 }
-.pt-\[100px\] {
-  padding-top: 100px;
+.pt-\[125px\] {
+  padding-top: 125px;
 }
 .pb-8 {
   padding-bottom: calc(var(--spacing) * 8);

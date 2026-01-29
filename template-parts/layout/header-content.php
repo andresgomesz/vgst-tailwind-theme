@@ -33,12 +33,12 @@
     </nav>
 
     <!-- Botón Mobile -->
-    <button id="menu-toggle" class="lg:hidden text-white ml-auto text-2xl" aria-label="Abrir menú">
+    <button id="menu-toggle" class="lg:hidden text-white ml-auto text-2xl z-[999]" aria-label="Abrir menú">
       ☰
     </button>
 
     <!-- Menú Mobile -->
-    <div id="mobile-menu" class="fixed inset-0 bg-[#1A2862] z-[99] hidden flex-col items-center pt-[100px] space-y-6 lg:hidden">
+    <div id="mobile-menu" class="fixed inset-0 bg-[#1A2862] z-[99] hidden flex-col items-center pt-[125px] space-y-6 lg:hidden">
       <?php
       wp_nav_menu([
         'theme_location' => 'primary',
