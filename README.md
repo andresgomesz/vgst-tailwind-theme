@@ -91,7 +91,7 @@ Posibilidad de adminstrarlo desde el backend, en el caso de la img, opté por ma
 
 ### Tipografía
 
-**Font-size estándar** del proyecto: **Roboto** `16px`
+**Font-size estándar** del proyecto: **Roboto**
 
 ---
 
@@ -182,7 +182,7 @@ Redes sociales:
 
 - Clonar repositorio en wp-content/themes/
 - Activar el tema desde el administrador de WordPress
-- Instalar y activar el plugin vgst-products
+- Instalar y activar el plugin vgst-core
 
 ## Plugin requerido
 
@@ -201,7 +201,7 @@ https://github.com/andresgomesz/vgst-core
 ## 📁 Estructura del plugin
 
 ```
-vgst-products/
+vgst-core/
 ├── vgst-core.php              # Punto de entrada principal del plugin
 ├── admin/
 │   └── home-slider-admin.php  # Interfaz administrativa para sliders
