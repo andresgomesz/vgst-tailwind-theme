@@ -5,11 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!toggle || !menu) return;
 
   toggle.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+    menu.classList.toggle('hidden');   // fallback por si JS falla
+    menu.classList.toggle('show');     // animación
   });
 
-  // Cerrar menú al click en un link
+  // Cerrar al hacer click en un link
   menu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => menu.classList.add('hidden'));
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      menu.classList.remove('show');
+    });
   });
 });

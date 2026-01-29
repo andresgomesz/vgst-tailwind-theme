@@ -22,10 +22,25 @@
 
     <!-- Botón Mobile -->
     <button id="menu-toggle"
-            class="lg:hidden text-white ml-auto text-2xl"
-            aria-label="Abrir menú">
-      ☰
-    </button>
+        class="lg:hidden fixed top-6 right-6 text-white text-3xl z-[10000]"
+        aria-label="Abrir/Cerrar menú">
+	☰
+	</button>
 
   </div>
 </header>
+
+<!-- Menú Mobile (fuera del div flex para evitar conflicto de z-index) -->
+<div id="mobile-menu"
+     class="fixed inset-0 bg-[#1A2862] z-[99] hidden flex-col items-center pt-[100px] space-y-6 lg:hidden">
+
+  <?php
+	wp_nav_menu([
+		'theme_location' => 'primary',
+		'menu'           => 'Main Menu',  // <--- igual que desktop
+		'menu_class'     => 'flex flex-col items-center gap-6 text-white',
+		'container'      => false,
+	]);
+  ?>
+
+</div>

@@ -38,3 +38,16 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   color: white;
 }
 
+/**
+ * Mobile menu effect
+ */
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+#mobile-menu.show {
+  transform: translateY(0);
+  opacity: 1;
+}
