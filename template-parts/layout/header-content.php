@@ -1,47 +1,46 @@
-<?php
-/**
- * Template part for displaying the header content
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package _tw
- */
+<header id="masthead"
+        class="absolute top-0 left-0 w-full h-[128px] z-50 flex items-center">
 
-?>
+  <div class="container mx-auto px-6 flex items-center justify-end">
 
-<header id="masthead">
+    <!-- Desktop Menu -->
+    <nav id="site-navigation"
+         aria-label="Main Navigation"
+         class="hidden lg:block">
 
-	<!--<div>
-		<?php
-		if ( is_front_page() ) :
-			?>
-			<h1><?php bloginfo( 'name' ); ?></h1>
-			<?php
-		else :
-			?>
-			<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-		endif;
+      <?php
+      wp_nav_menu([
+        'theme_location' => 'primary', // tu ubicación 'primary'
+        'menu'           => 'Main Menu', // nombre del menú
+        'menu_id'        => 'primary-menu',
+        'menu_class'     => 'flex items-center gap-8',
+        'container'      => false,
+      ]);
+      ?>
 
-		$_tw_description = get_bloginfo( 'description', 'display' );
-		if ( $_tw_description || is_customize_preview() ) :
-			?>
-			<p><?php echo $_tw_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-		<?php endif; ?>
-	</div> -->
+    </nav>
 
-	<nav id="site-navigation" aria-label="<?php esc_attr_e( 'Main Navigation', '_tw' ); ?>">
-		<button aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_tw' ); ?></button>
+    <!-- Botón Mobile -->
+    <button id="menu-toggle"
+            class="lg:hidden text-white ml-auto text-2xl"
+            aria-label="Abrir menú">
+      ☰
+    </button>
 
-		<?php
-		wp_nav_menu(
-			array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-				'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
-			)
-		);
-		?>
-	</nav><!-- #site-navigation -->
+  </div>
+</header>
 
-</header><!-- #masthead -->
+<!-- Mobile Menu -->
+<div id="mobile-menu"
+     class="fixed inset-0 bg-[#1A2862] z-40 hidden flex-col items-center justify-center space-y-6">
+
+  <?php
+  wp_nav_menu([
+    'theme_location' => 'primary',
+    'menu'           => 'Main Menu',
+    'menu_class'     => 'flex flex-col items-center gap-6 text-white text-xl font-semibold',
+    'container'      => false,
+  ]);
+  ?>
+
+</div>

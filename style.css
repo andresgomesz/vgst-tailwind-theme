@@ -1,8 +1,25 @@
-/*
-Theme Name: Tu Tema TW
-Author: Andrés Gómez
-Description: Custom WordPress theme built with Tailwind CSS
-Version: 1.0.0
+/*! tailwindcss v4.1.14 | MIT License | https://tailwindcss.com */
+/*!
+Theme Name: _tw
+Theme URI: https://underscoretw.com/
+Description: A custom theme based on _tw
+Version: 0.1.0
+Author: underscoretw.com
+Author URI: https://underscoretw.com/
+Text Domain: _tw
+Requires at least: 6.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+_tw is based on _tw https://underscoretw.com/, (C) 2021-2025 Greg Sullivan
+_tw is distributed under the terms of the GNU GPL v2 or later.
+
+_tw is based on Underscores https://underscores.me/ and Varia https://github.com/Automattic/themes/tree/master/varia, (C) 2012-2025 Automattic, Inc.
+Underscores and Varia are distributed under the terms of the GNU GPL v2 or later.
 */
 @layer properties;
 :root, :host {
@@ -295,6 +312,23 @@ body {
     }
   }
 }
+#primary-menu > li > a {
+  font-size: 16px;
+  --tw-leading: 22px;
+  line-height: 22px;
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+#primary-menu > li > a:hover {
+  color: #9FCE00;
+}
+#primary-menu > li:last-child > a {
+  color: #9FCE00;
+}
 .visible {
   visibility: visible;
 }
@@ -312,11 +346,17 @@ body {
 .absolute {
   position: absolute;
 }
+.fixed {
+  position: fixed;
+}
 .relative {
   position: relative;
 }
 .inset-0 {
   inset: calc(var(--spacing) * 0);
+}
+.top-0 {
+  top: calc(var(--spacing) * 0);
 }
 .top-1\/2 {
   top: calc(1/2 * 100%);
@@ -342,6 +382,9 @@ body {
 .-bottom-\[15px\] {
   bottom: calc(15px * -1);
 }
+.left-0 {
+  left: calc(var(--spacing) * 0);
+}
 .left-1\/2 {
   left: calc(1/2 * 100%);
 }
@@ -356,6 +399,12 @@ body {
 }
 .z-20 {
   z-index: 20;
+}
+.z-40 {
+  z-index: 40;
+}
+.z-50 {
+  z-index: 50;
 }
 .container {
   width: 100%;
@@ -960,6 +1009,9 @@ body {
 .h-\[70px\] {
   height: 70px;
 }
+.h-\[128px\] {
+  height: 128px;
+}
 .h-\[232px\] {
   height: 232px;
 }
@@ -1130,6 +1182,9 @@ body {
 .justify-center {
   justify-content: center;
 }
+.justify-end {
+  justify-content: flex-end;
+}
 .gap-3 {
   gap: calc(var(--spacing) * 3);
 }
@@ -1159,6 +1214,11 @@ body {
   --tw-space-y-reverse: 0;
   margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
   margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+}
+:where(.space-y-6 > :not(:last-child)) {
+  --tw-space-y-reverse: 0;
+  margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+  margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
 }
 :where(.space-x-0\.5 > :not(:last-child)) {
   --tw-space-x-reverse: 0;
@@ -2268,6 +2328,11 @@ body {
   }
 }
 @media (width >= 64rem) {
+  .lg\:hidden {
+    display: none;
+  }
+}
+@media (width >= 64rem) {
   .lg\:aspect-auto {
     aspect-ratio: auto;
   }
@@ -2508,6 +2573,10 @@ body {
   syntax: "*";
   inherits: false;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -2604,10 +2673,6 @@ body {
   syntax: "<length-percentage>";
   inherits: false;
   initial-value: 100%;
-}
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-tracking {
   syntax: "*";
@@ -2763,6 +2828,7 @@ body {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-font-weight: initial;
+      --tw-leading: initial;
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
@@ -2784,7 +2850,6 @@ body {
       --tw-gradient-from-position: 0%;
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
-      --tw-leading: initial;
       --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;

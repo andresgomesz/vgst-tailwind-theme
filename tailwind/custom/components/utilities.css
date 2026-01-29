@@ -16,3 +16,16 @@
   }
 }
 
+/* Desktop Menu */
+#primary-menu > li > a {
+  @apply text-white text-[16px] leading-[22px] font-semibold transition-colors;
+}
+
+#primary-menu > li > a:hover {
+  color: #9FCE00;
+}
+
+/* Último link Contacto */
+#primary-menu > li:last-child > a {
+  color: #9FCE00;
+}

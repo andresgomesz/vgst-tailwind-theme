@@ -312,3 +312,12 @@ function tw_enqueue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'tw_enqueue_scripts' );
+
+
+wp_enqueue_script(
+  'mobile-menu',
+  get_template_directory_uri() . '/assets/js/mobile-menu.js',
+  [],
+  null,
+  true
+);
