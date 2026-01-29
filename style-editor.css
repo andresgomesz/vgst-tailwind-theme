@@ -32,6 +32,9 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 #primary-menu > li:last-child > a {
   color: #9FCE00;
 }
+#primary-menu > li:last-child > a:hover {
+  color: white;
+}
 :root, :host {
   --font-sans: 'Roboto',
 		ui-sans-serif,
@@ -2307,13 +2310,23 @@ header#masthead {
   }
 }
 @media (width >= 64rem) {
-  .lg\:right-\[10\%\] {
-    right: 10%;
+  .lg\:relative {
+    position: relative;
   }
 }
 @media (width >= 64rem) {
-  .lg\:left-\[10\%\] {
-    left: 10%;
+  .lg\:right-\[5\%\] {
+    right: 5%;
+  }
+}
+@media (width >= 64rem) {
+  .lg\:right-\[50px\] {
+    right: 50px;
+  }
+}
+@media (width >= 64rem) {
+  .lg\:left-\[5\%\] {
+    left: 5%;
   }
 }
 @media (width >= 64rem) {

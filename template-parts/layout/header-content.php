@@ -1,7 +1,7 @@
 <header id="masthead"
         class="absolute top-0 left-0 w-full h-[128px] z-[9999] flex items-center pointer-events-auto">
 
-  <div class="w-full flex items-center justify-end px-6">
+  <div class="w-full flex items-center justify-end px-6 lg:relative lg:right-[50px]">
 
     <!-- Desktop Menu -->
     <nav id="site-navigation"

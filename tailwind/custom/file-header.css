@@ -33,3 +33,8 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 #primary-menu > li:last-child > a {
   color: #9FCE00;
 }
+
+#primary-menu > li:last-child > a:hover {
+  color: white;
+}
+

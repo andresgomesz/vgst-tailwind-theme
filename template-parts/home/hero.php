@@ -103,7 +103,7 @@
   <!-- Flecha izquierda -->
   <button id="hero-prev"
           class="absolute top-1/2 -translate-y-1/2
-                  left-2 sm:left-6 lg:left-[10%]
+                  left-2 sm:left-6 lg:left-[5%]
                   w-[58px] h-[58px]
                   rounded-full
                   bg-[#9FCE00]
@@ -120,7 +120,7 @@
   <!-- Flecha derecha -->
   <button id="hero-next"
           class="absolute top-1/2 -translate-y-1/2
-                  right-2 sm:right-6 lg:right-[10%]
+                  right-2 sm:right-6 lg:right-[5%]
                   w-[58px] h-[58px]
                   rounded-full
                   bg-[#9FCE00]
