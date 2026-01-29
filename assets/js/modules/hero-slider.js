@@ -1,3 +1,5 @@
+// assets/js/modules/hero-slider.js
+
 document.addEventListener('DOMContentLoaded', () => {
   const slider = document.getElementById('hero-slider-track');
   const slides = slider?.children;
