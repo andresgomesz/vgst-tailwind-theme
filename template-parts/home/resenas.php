@@ -21,7 +21,7 @@
                 <div class="flex items-center space-x-3">
                     <!-- Botón anterior -->
                     <button id="prev-resena" 
-                            class="w-14 h-14 bg-white border-[1.94px] border-[#3E509D] rounded-full flex items-center justify-center hover:bg-[#3E509D] transition-all duration-300 group"
+                            class="cursor-pointer w-14 h-14 bg-white border-[1.94px] border-[#3E509D] rounded-full flex items-center justify-center hover:bg-[#3E509D] transition-all duration-300 group"
                             aria-label="Reseña anterior">
                         <svg class="w-6 h-6 text-[#3E509D] group-hover:text-white transition-colors" 
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,7 +31,7 @@
                     
                     <!-- Botón siguiente -->
                     <button id="next-resena" 
-                            class="w-14 h-14 bg-white border-[1.94px] border-[#3E509D] rounded-full flex items-center justify-center hover:bg-[#3E509D] transition-all duration-300 group"
+                            class="cursor-pointer w-14 h-14 bg-white border-[1.94px] border-[#3E509D] rounded-full flex items-center justify-center hover:bg-[#3E509D] transition-all duration-300 group"
                             aria-label="Siguiente reseña">
                         <svg class="w-6 h-6 text-[#3E509D] group-hover:text-white transition-colors" 
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">

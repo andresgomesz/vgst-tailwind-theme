@@ -69,7 +69,6 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   --color-blue-600: oklch(54.6% 0.245 262.881);
   --color-blue-800: oklch(42.4% 0.199 265.638);
   --color-gray-100: oklch(96.7% 0.003 264.542);
-  --color-gray-200: oklch(92.8% 0.006 264.531);
   --color-gray-300: oklch(87.2% 0.01 258.338);
   --color-gray-400: oklch(70.7% 0.022 261.325);
   --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -1196,6 +1195,9 @@ header#masthead {
 }
 .cursor-not-allowed {
   cursor: not-allowed;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .resize {
   resize: both;
@@ -2359,6 +2361,11 @@ header#masthead {
   }
 }
 @media (width >= 64rem) {
+  .lg\:top-\[22px\] {
+    top: 22px;
+  }
+}
+@media (width >= 64rem) {
   .lg\:right-\[5\%\] {
     right: 5%;
   }
@@ -2571,6 +2578,11 @@ header#masthead {
 @media (width >= 64rem) {
   .lg\:py-0 {
     padding-block: calc(var(--spacing) * 0);
+  }
+}
+@media (width >= 64rem) {
+  .lg\:pb-0 {
+    padding-bottom: calc(var(--spacing) * 0);
   }
 }
 @media (width >= 64rem) {

@@ -1,4 +1,4 @@
-<section class="py-8 px-4 sm:py-12 md:px-8 bg-[#E8EDEF]">
+<section class="py-8 px-4 sm:py-12 md:px-8 bg-[#E8EDEF] lg:pb-0">
     <div class="container mx-auto max-w-4xl">
         <!-- Título con subrayado -->
         <div class="text-center mb-6 sm:mb-8 md:mb-10">
@@ -17,7 +17,7 @@
             </h2>
         </div>
         
-        <form class="presupuesto-form p-4 sm:p-6 md:p-10 rounded-xl" method="POST" action="<?php echo admin_url('admin-ajax.php'); ?>">
+        <form class="presupuesto-form p-4 sm:p-6 md:p-10 rounded-xl lg:pb-0" method="POST" action="<?php echo admin_url('admin-ajax.php'); ?>">
             <input type="hidden" name="action" value="enviar_presupuesto">
             <input type="hidden" name="nonce" value="<?php echo wp_create_nonce('presupuesto_nonce'); ?>">
 
@@ -137,9 +137,9 @@
             </div>
             
             <!-- Botón - Ancho completo en móvil, máximo 300px en tablet+ -->
-            <div class="text-center">
+            <div class="text-center relative lg:top-[22px]">
                 <button type="submit" 
-                        class="bg-[#3E509D] hover:bg-[#2C3E7A] text-white font-bold py-2.5 sm:py-3 px-6 sm:px-8 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#3E509D] focus:ring-offset-2 w-full sm:max-w-[300px] text-sm sm:text-base">
+                        class="cursor-pointer bg-[#3E509D] hover:bg-[#2C3E7A] text-white font-bold py-2.5 sm:py-3 px-6 sm:px-8 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#3E509D] focus:ring-offset-2 w-full sm:max-w-[300px] text-sm sm:text-base">
                     PIDE PRESUPUESTO
                 </button>
             </div>
