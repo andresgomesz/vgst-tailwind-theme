@@ -38,12 +38,13 @@
     </button>
 
     <!-- Menú Mobile -->
-    <div id="mobile-menu" class="fixed inset-0 bg-[#1A2862] z-[99] hidden flex-col items-center pt-[125px] space-y-6 lg:hidden">
+    <!--<div id="mobile-menu" class="fixed inset-0 bg-[#1A2862] z-[99] hidden flex-col items-center pt-[125px] space-y-6 lg:hidden">-->
+    <div id="mobile-menu" class="absolute inset-0 z-[99] hidden flex-col items-center space-y-6 lg:hidden">
       <?php
       wp_nav_menu([
         'theme_location' => 'primary',
         'menu'           => 'Main Menu',
-        'menu_class'     => 'flex flex-col items-center gap-6 text-white',
+        'menu_class'     => 'flex flex-col items-center gap-6 text-white bg-[#1A2862] w-full py-[50px]',
         'container'      => false,
       ]);
       ?>

@@ -4,7 +4,7 @@
  * Author: Andres Sebastian Gomez
  * Description: Tema VGST basado en _tw
  */
-
+ 
 @layer properties;
 #primary-menu {
   display: flex !important;
@@ -972,6 +972,9 @@ header#masthead {
 .hidden {
   display: none;
 }
+.inline {
+  display: inline;
+}
 .inline-block {
   display: inline-block;
 }
@@ -1013,9 +1016,6 @@ header#masthead {
 }
 .h-16 {
   height: calc(var(--spacing) * 16);
-}
-.h-64 {
-  height: calc(var(--spacing) * 64);
 }
 .h-\[17px\] {
   height: 17px;
@@ -1354,9 +1354,6 @@ header#masthead {
 }
 .bg-gray-100 {
   background-color: var(--color-gray-100);
-}
-.bg-gray-200 {
-  background-color: var(--color-gray-200);
 }
 .bg-gray-300 {
   background-color: var(--color-gray-300);
