@@ -37,6 +37,10 @@ Esta decisión permite:
 - Evitar sobrecargar el panel con tipos de contenido adicionales.
 - Centralizar la gestión del slider principal del sitio.
 
+Además, en el caso particular de que no exista contenido cargado, el plugin expone un
+conjunto de slides de demostración que el theme utiliza como fallback
+visual del mockup, evitando estados vacíos en entornos de prueba o revisión.
+
 Los **productos**, en cambio, sí se implementaron como **Custom Post Type**, ya que representan
 contenido dinámico, reutilizable y exportable, con ciclo de vida propio.
 
