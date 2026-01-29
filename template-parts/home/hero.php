@@ -8,11 +8,8 @@
     ? vgst_get_home_slider()
     : [];
 
-    if (empty($slides)) {
-        echo '<div class="h-64 flex items-center justify-center bg-gray-200 text-gray-600">';
-        echo 'Slider vacío';
-        echo '</div>';
-        return;
+    if (empty($slides) && function_exists('vgst_get_home_slider_demo')) {
+        $slides = vgst_get_home_slider_demo();
     }
 
 ?>
